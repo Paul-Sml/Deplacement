@@ -10,7 +10,6 @@ struct lieu
     int acces[4];
 };
 typedef struct lieu defL;
-	
 
 void deplac(int * lieuActuel, defL* lieux){
 	char deplacement[20]="vide";
@@ -39,7 +38,6 @@ void deplac(int * lieuActuel, defL* lieux){
 		printf("Ce lieu n'existe pas\n");
 		deplac(lieuActuel, lieux);
 	}
-}
 
 
 
