@@ -1,17 +1,18 @@
-#include <stfio.d>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-
-int main(int argc, char const *argv[])
+int main(void)
 {
-	int deplacement = 0
+	char deplacement[10] = "vide";
 
-	printf("Voulez vous vous rendre au puit (1) ou la grotte (2)")
-	scanf(%s, &deplacement)
-	if (deplacement==1){
+	printf("Voulez vous vous rendre au puit (1) ou la grotte (2)");
+	scanf("%s", &deplacement);
+	if (strcmp(deplacement, "puit")==0){
 		printf("Vous vous rendez au puit du village\n");
 	}
-	if (deplacement==2){
-		printf("Vous vous retrouvez face à la groo\n");
+	if (strcmp(deplacement, "grotte")==0){
+		printf("Vous vous retrouvez face a la grotte\n");
 	}
 	
 	return 0;
