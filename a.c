@@ -1,4 +1,4 @@
-#include<stfio.d>
+#include <stfio.d>
 
 
 int main(int argc, char const *argv[])
@@ -6,7 +6,7 @@ int main(int argc, char const *argv[])
 	int deplacement = 0
 
 	printf("Voulez vous vous rendre au puit (1) ou la grotte (2)")
-	scanf(%d, &deplacement)
+	scanf(%s, &deplacement)
 	if (deplacement==1){
 		printf("Vous vous rendez au puit du village\n");
 	}
